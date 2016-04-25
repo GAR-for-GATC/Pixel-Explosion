@@ -1,0 +1,49 @@
+<!--Using canvas to get image data.  This code needs to be run in
+XAMPP to prevent a tainted canvas error caused by loading a
+cross origin image.
+ -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Png Explosion</title>
+	<meta charset="utf-8">
+	
+	<script src="main.js"></script>
+	<script src="jquery-1.12.3.min.js"></script>
+	
+</head>
+<body>
+	<style>
+	.picInput{
+		display: block;
+		text-align : center;		
+	}	
+	</style>
+	
+
+	<br><br>
+	<canvas id="myCanvas" width="0" height="0">
+	Fallback content, in case the browser does not support Canvas.
+	</canvas>
+	
+	<br><br><br><br>
+	<h4>Number of pixels is<p id="pixNumber" >0</p></h4>
+	
+	<br>
+	
+	<img id="myPic" style="display: block;" src="test2.jpg" crossorigin="anonymous">
+	<canvas id="myCanvas2" width="0" height="0">
+	Fallback content, in case the browser does not support Canvas.
+	</canvas>
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+	
