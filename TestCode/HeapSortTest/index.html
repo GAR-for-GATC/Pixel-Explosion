@@ -1,0 +1,38 @@
+
+<!--This was run in XAMPP, fwiw.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Png Explosion</title>
+	<meta charset="utf-8">
+	<script src="jquery-1.12.3.min.js"></script>
+	<script src="main.js"></script>
+	
+</head>
+<body>
+	<style>
+	.picInput{
+		display: block;
+		text-align : center;		
+	}	
+	</style>
+	
+	<form onsubmit="return validateForm();"  class="picInput">
+		<input onchange="readURL(this);" id="inputImage" type="file" name="fileupload" accept="image/png"/>
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+	<img id="blah" src="#" alt="your image" />
+	<br><br><br><br><br><br><br><br><br>
+	<canvas style="float:left;"id="myCanvas2" width="0" height="0">
+		Fallback content, in case the browser does not support Canvas.
+	</canvas>
+	<canvas style="float:left;"id="myCanvas3" width="0" height="0">
+		Fallback content, in case the browser does not support Canvas.
+	</canvas>
+	<br><br><br><br><br><br><br><br><br><br>
+	
+</body>
+</html>
+
